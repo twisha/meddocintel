@@ -1,0 +1,55 @@
+RIVERSIDE COMMUNITY HOSPITAL
+EMERGENCY DEPARTMENT NOTE
+
+Patient: Priya Kapoor                    DOB: 11/04/1989
+MRN: 9924517                             Sex: Female
+Insurance: MedShield PPO   ID: MS-4491-8820
+
+Encounter Date: 06/14/2025              Encounter Type: Emergency Visit
+Attending: Dr. James O'Brien, MD        Department: Emergency Medicine
+
+Chief Complaint: Chest pain and shortness of breath x 2 hours
+
+HISTORY OF PRESENT ILLNESS:
+29-year-old female with no significant past medical history presents with acute onset chest pain, rated 7/10, sharp, non-radiating, worsened with inspiration. Accompanied by mild dyspnea. Denies fever, cough, leg swelling. No recent travel. No oral contraceptive use.
+
+VITAL SIGNS:
+  BP: 122/78 mmHg     HR: 104 bpm (tachycardic)      RR: 22 breaths/min
+  Temp: 99.1 F         O2 Sat: 94% on room air         Wt: 137 lbs
+
+MEDICATIONS (reported by patient):
+  1. Loratadine 10mg PO daily — seasonal allergies (PRN)
+  2. Ibuprofen 400mg PO PRN — as needed for pain
+
+ALLERGIES: Penicillin (rash)
+
+DIAGNOSTIC RESULTS:
+  - EKG: Sinus tachycardia, no ST changes
+  - Chest X-ray: No infiltrates, no pneumothorax
+  - D-dimer: 1.4 ng/mL (ELEVATED)
+  - Troponin I: 0.02 ng/mL (within normal limits)
+  - BMP: Normal
+
+DIAGNOSES:
+  - Pleuritic chest pain (R07.1)                    — ACTIVE
+  - Suspected pulmonary embolism (I26.99)           — WORKING DIAGNOSIS
+  - Tachycardia, sinus (R00.0)                      — ACTIVE, likely secondary
+
+ASSESSMENT AND PLAN:
+
+1. Suspected Pulmonary Embolism (I26.99) — Working Diagnosis
+   Assessment: Elevated D-dimer + pleuritic pain + tachycardia + O2 94% warrants CT-PA to rule out PE.
+   Plan: CT Pulmonary Angiography ordered STAT. Anticoagulation on hold pending imaging. Keep NPO.
+
+2. Pleuritic Chest Pain (R07.1)
+   Assessment: Likely pleurisy vs. PE-related. No evidence of musculoskeletal cause.
+   Plan: Pain management with ketorolac 30mg IV x1. Monitor O2 saturation continuously.
+
+3. Tachycardia
+   Assessment: Sinus tachycardia, most likely reactive to pain/anxiety vs. PE.
+   Plan: Monitor, recheck HR after pain control.
+
+DISPOSITION: Admit for observation pending CT-PA results.
+
+Signed: Dr. James O'Brien, MD
+Time: 06/14/2025 03:17 AM

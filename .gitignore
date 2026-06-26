@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Node
+web/node_modules/
+web/.next/
+
+# Docker volumes (local)
+postgres_data/
+redis_data/
+
+# Uploads
+backend/uploads/

@@ -1,0 +1,39 @@
+CLINICAL PROGRESS NOTE
+==============================================================
+Patient Name:  Robert Martinez                 DOB: 01/11/1955
+MRN:           MRN-100300                      Gender: M
+Insurance ID:  UHC-63401
+
+Visit Date:  03/19/2025               Visit Type: Acute Care Visit
+Provider:    Dr. Aisha Johnson, MD
+Facility:    Community Health Center
+
+CHIEF COMPLAINT:
+  Chronic kidney disease stage 3 management
+
+VITAL SIGNS:
+  BP: 142/90 mmHg     HR: 74 bpm       RR: 16 breaths/min
+  Temp: 98.4 F      Wt: 176 lbs       Ht: 68 in
+  BMI: 26.8          O2 Sat: 98%
+
+CURRENT MEDICATIONS:
+  1. Amlodipine 10mg PO once daily  —  Hypertension/CKD renoprotection
+  2. Furosemide 40mg PO once daily  —  Volume management
+  3. Sodium bicarb 650mg PO twice daily  —  Metabolic acidosis
+  4. Calcitriol 0.25mcg PO once daily  —  Renal osteodystrophy prevention
+
+DIAGNOSES / PROBLEM LIST:
+  - Chronic kidney disease, stage 3 (N18.3)  —  ACTIVE
+  - Hypertension (I10)  —  ACTIVE, poorly controlled
+  - Metabolic acidosis (E87.2)  —  ACTIVE
+  - Anemia of CKD (D63.1)  —  ACTIVE
+
+ASSESSMENT:
+  eGFR 42 (stable). BP 142/90, target <130/80. Hgb 10.2.
+
+PLAN:
+  Nephrology referral. Increase Amlodipine to 10mg. Low-sodium, low-protein diet.
+
+Electronically signed by: Dr. Aisha Johnson, MD
+Date/Time: 03/19/2025 09:20 EST
+==============================================================

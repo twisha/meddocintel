@@ -1,0 +1,49 @@
+METROPOLITAN HEALTH SYSTEM
+CLINICAL PROGRESS NOTE
+
+Patient Name: Robert Hernandez           Date of Birth: 07/22/1955
+MRN: 4821039                             Gender: Male
+Insurance ID: BCA-7731-00293
+
+Visit Date: 03/10/2025                   Visit Type: Follow-up
+Provider: Dr. Sarah Patel, MD           Facility: Metro Internal Medicine
+
+Chief Complaint: Follow-up for Type 2 Diabetes and hypertension; patient also reports worsening fatigue over past 3 weeks.
+
+VITALS:
+  BP: 148/92 mmHg        HR: 82 bpm         RR: 16 breaths/min
+  Temp: 98.9 F            Wt: 214 lbs        Ht: 70 in
+  BMI: 30.7               O2 Sat: 97%
+
+CURRENT MEDICATIONS:
+  1. Metformin 1000mg PO twice daily — Type 2 Diabetes
+  2. Lisinopril 20mg PO once daily   — Hypertension
+  3. Atorvastatin 40mg PO at bedtime — Hyperlipidemia
+  4. Aspirin 81mg PO daily           — Cardiovascular prophylaxis
+
+DIAGNOSES / PROBLEM LIST:
+  - Type 2 Diabetes Mellitus (E11.9) — ACTIVE
+  - Hypertension, essential (I10)    — ACTIVE, poorly controlled
+  - Hyperlipidemia (E78.5)           — ACTIVE
+  - Fatigue — NEW, under evaluation
+
+ASSESSMENT AND PLAN:
+
+1. Type 2 Diabetes (E11.9)
+   Assessment: HbA1c 8.4% (drawn today), above target of <7.5%. Patient reports dietary non-adherence on weekends.
+   Plan: Increase Metformin to 1000mg TID. Refer to diabetes education. Recheck HbA1c in 3 months.
+
+2. Hypertension, poorly controlled (I10)
+   Assessment: BP consistently elevated across three readings today (148/92, 152/94, 146/90).
+   Plan: Increase Lisinopril to 40mg daily. Add HCTZ 12.5mg daily. Dietary counseling re: sodium restriction. Recheck in 4 weeks.
+
+3. Fatigue — New complaint
+   Assessment: Likely multifactorial — suboptimal DM control, possible anemia.
+   Plan: CBC, CMP, TSH ordered. Follow up in 2 weeks to review labs.
+
+4. Hyperlipidemia (E78.5)
+   Assessment: LDL 112 mg/dL (last check 6 months ago). Tolerating statin well.
+   Plan: Continue Atorvastatin 40mg. Recheck lipid panel in 6 months.
+
+Electronically signed by: Dr. Sarah Patel, MD
+Date/Time: 03/10/2025 14:32 EST
