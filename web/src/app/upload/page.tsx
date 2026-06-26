@@ -2,8 +2,10 @@
 
 import { useState, useCallback } from "react";
 import { documents } from "@/lib/api";
+import { useAuthGuard } from "@/lib/useAuth";
 
 export default function UploadPage() {
+  useAuthGuard();
   const [dragging, setDragging] = useState(false);
   const [file, setFile] = useState<File | null>(null);
   const [status, setStatus] = useState<"idle" | "uploading" | "done" | "error">("idle");

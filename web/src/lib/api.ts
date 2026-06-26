@@ -3,8 +3,10 @@ import axios from "axios";
 const api = axios.create({ baseURL: "/api" });
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem("token");
-  if (token) config.headers.Authorization = `Bearer ${token}`;
+  if (typeof window !== "undefined") {
+    const token = localStorage.getItem("token");
+    if (token) config.headers.Authorization = `Bearer ${token}`;
+  }
   return config;
 });
 
@@ -49,11 +51,11 @@ export const auth = {
     api.post("/auth/signup/user", { email, password }),
   login: async (email: string, password: string) => {
     const res = await api.post<{ access_token: string }>("/auth/login", { email, password });
-    localStorage.setItem("token", res.data.access_token);
+    if (typeof window !== "undefined") localStorage.setItem("token", res.data.access_token);
     return res.data;
   },
-  logout: () => localStorage.removeItem("token"),
-  isAuthenticated: () => !!localStorage.getItem("token"),
+  logout: () => { if (typeof window !== "undefined") localStorage.removeItem("token"); },
+  isAuthenticated: () => typeof window !== "undefined" && !!localStorage.getItem("token"),
 };
 
 export const documents = {

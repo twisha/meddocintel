@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { reviewQueue, documents, type Document, type ExtractionDetail } from "@/lib/api";
+import { useAuthGuard } from "@/lib/useAuth";
 
 export default function ReviewQueuePage() {
+  useAuthGuard();
   const [docs, setDocs] = useState<Document[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [extraction, setExtraction] = useState<ExtractionDetail | null>(null);
