@@ -16,6 +16,8 @@ Document (PDF/image/text)
 [UI]  Next.js dashboard — upload, review queue, extraction viewer
 ```
 
+> 📐 **Architecture:** see [docs/HLD.md](docs/HLD.md) for the high-level design — system context, pipeline, data model, and sequence diagrams (Mermaid).
+
 ---
 
 ## Stack
