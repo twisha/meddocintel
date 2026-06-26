@@ -283,14 +283,14 @@ sequenceDiagram
 
     Q->>W: process_document(doc_id)
     W->>DB: status = processing
-    W->>LLM: OCR (Tesseract local; Vision if conf<0.6)
+    W->>LLM: OCR (Tesseract local; Vision if conf below 0.6)
     W->>LLM: extract (Sonnet)
     W->>DB: insert Extraction (extracted)
     W->>Q: enqueue verify_extraction(extraction_id)
 
     Q->>W: verify_extraction(extraction_id)
     W->>W: rule gates
-    opt conf<0.85 OR rule flag
+    opt conf below 0.85 OR rule flag
         W->>LLM: Opus judge
     end
     W->>DB: insert Verification · status = verified/flagged/rejected
