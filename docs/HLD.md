@@ -110,7 +110,7 @@ flowchart TD
 
     subgraph verify["verify_extraction (worker)"]
         gates["Rule gates (free)<br/>required fields · vital ranges · date logic"]
-        decide{"conf < 0.85<br/>OR rule flag?"}
+        decide{"conf below 0.85<br/>OR rule flag?"}
         opus["STAGE 3 — Opus judge (sampled)<br/>per-field scores vs OCR text"]
         skip["skip Opus<br/>(high-confidence + clean)"]
         verdict{"verdict"}
@@ -283,7 +283,7 @@ sequenceDiagram
 
     Q->>W: process_document(doc_id)
     W->>DB: status = processing
-    W->>LLM: OCR (Tesseract local; Vision if conf below 0.6)
+    W->>LLM: OCR — Tesseract local, Vision if conf below 0.6
     W->>LLM: extract (Sonnet)
     W->>DB: insert Extraction (extracted)
     W->>Q: enqueue verify_extraction(extraction_id)
