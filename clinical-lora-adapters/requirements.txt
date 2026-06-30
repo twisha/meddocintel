@@ -1,0 +1,26 @@
+# --- Core training / PEFT stack ---
+torch>=2.2.0
+transformers>=4.44.0
+peft>=0.12.0
+accelerate>=0.33.0
+datasets>=2.20.0
+# bitsandbytes enables 4-bit QLoRA. Linux/CUDA only; optional on macOS/CPU.
+bitsandbytes>=0.43.0; sys_platform == "linux"
+sentencepiece>=0.2.0          # tokenizer for Mistral / Llama
+protobuf>=4.25.0
+
+# --- Evaluation ---
+rouge-score>=0.1.2            # ROUGE for summarization
+scikit-learn>=1.4.0           # P/R/F1 helpers
+
+# --- Inference API ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.0.0
+
+# --- Synthetic data generation (ground truth via Claude) ---
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+
+# --- Dev ---
+pytest>=8.0.0

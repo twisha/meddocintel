@@ -18,6 +18,8 @@ Document (PDF/image/text)
 
 > 📐 **Architecture:** see [docs/HLD.md](docs/HLD.md) for the high-level design — system context, pipeline, data model, and sequence diagrams (Mermaid).
 
+> 🧩 **Subproject — self-hosted fine-tuned tier:** [`clinical-lora-adapters/`](clinical-lora-adapters/README.md) adds a parameter-efficient (LoRA) system — one open-weights 7B base with swappable, specialty-specific adapters (cardiology summarization, radiology extraction) — as a self-hosted alternative to the Claude extraction slot. Same memory footprint serves N specialties. See its [README](clinical-lora-adapters/README.md).
+
 ---
 
 ## Stack
@@ -31,6 +33,7 @@ Document (PDF/image/text)
 | OCR | Tesseract (local) → Claude Haiku Vision (fallback) |
 | Extraction | Claude Sonnet (`claude-sonnet-4-6`) |
 | Verification | Claude Opus (`claude-opus-4-8`) — sampled |
+| Fine-tuned tier | Mistral-7B + LoRA adapters (HuggingFace `peft`) — see [`clinical-lora-adapters/`](clinical-lora-adapters/README.md) |
 | UI | Next.js 15 + Tailwind CSS |
 | Reverse proxy | Nginx |
 | Containers | Docker Compose |
@@ -148,8 +151,14 @@ meddocintel/
 │   ├── src/lib/api.ts      ← typed API client
 │   └── Dockerfile
 │
-└── infra/
-    └── nginx.conf          ← reverse proxy
+├── infra/
+│   └── nginx.conf          ← reverse proxy
+│
+└── clinical-lora-adapters/ ← self-hosted PEFT subproject (own README)
+    ├── common/             ← base model + adapter registry + prompt contract
+    ├── data/               ← synthetic clinical notes + Claude-based generator
+    ├── training/           ← train.py (QLoRA) + eval.py (base vs adapter)
+    └── inference/          ← adapter_manager.py + api.py (FastAPI, hot-swap)
 ```
 
 ---
@@ -191,6 +200,9 @@ Zero cost, zero external dependency. Two patterns: API keys (machine-to-machine,
 
 ### Why PostgreSQL row-level security?
 Tenant isolation at the database layer. `SET LOCAL app.current_tenant = '<id>'` is called on every request; RLS policies automatically filter all queries to that tenant's rows.
+
+### Why a self-hosted LoRA tier alongside Claude?
+The Claude extraction slot is the default — best quality, zero ops. But some deployments need PHI to stay on-prem or want lower per-document cost at volume. [`clinical-lora-adapters/`](clinical-lora-adapters/README.md) fine-tunes small task-specific adapters on top of one open-weights 7B base, so N clinical specialties cost ~one base model + N tiny adapters (~84–90% less serving memory than N full models). It slots in behind the same extraction interface (`extraction.py`), and `eval.py` benchmarks adapter-vs-base on F1/latency/cost so the quality trade-off is measured, not assumed.
 
 ---
 

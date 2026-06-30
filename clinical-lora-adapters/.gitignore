@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Model artifacts — adapters are small but we don't commit weights
+adapters/
+*.safetensors
+*.bin
+runs/
+wandb/
+
+# Eval outputs
+eval_results/*.json
+!eval_results/.gitkeep
+
+# OS
+.DS_Store

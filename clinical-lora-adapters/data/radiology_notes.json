@@ -1,0 +1,98 @@
+[
+  {
+    "id": "rad-0001",
+    "report": "EXAMINATION: CT chest with contrast. INDICATION: 58yo with hemoptysis. FINDINGS: A 2.3 cm spiculated nodule is present in the right upper lobe with associated pleural retraction. Mediastinal lymphadenopathy is noted with a 1.4 cm right paratracheal node. No pleural effusion. Heart size normal. No pulmonary embolism. IMPRESSION: 2.3 cm spiculated right upper lobe nodule with mediastinal lymphadenopathy, highly suspicious for primary lung malignancy. Recommend tissue sampling.",
+    "extraction": {
+      "modality": "CT",
+      "body_part": "chest",
+      "findings": ["2.3 cm spiculated nodule in right upper lobe with pleural retraction", "1.4 cm right paratracheal mediastinal lymphadenopathy", "no pleural effusion", "no pulmonary embolism"],
+      "impression": "Spiculated right upper lobe nodule with mediastinal lymphadenopathy, highly suspicious for primary lung malignancy.",
+      "measurements": ["2.3 cm nodule", "1.4 cm paratracheal node"],
+      "critical_flag": true
+    }
+  },
+  {
+    "id": "rad-0002",
+    "report": "EXAMINATION: Chest radiograph, PA and lateral. INDICATION: Cough, follow-up. FINDINGS: Lungs are clear bilaterally without focal consolidation, effusion, or pneumothorax. Cardiomediastinal silhouette is within normal limits. No acute osseous abnormality. IMPRESSION: No acute cardiopulmonary process.",
+    "extraction": {
+      "modality": "X-ray",
+      "body_part": "chest",
+      "findings": ["clear lungs bilaterally", "no consolidation", "no effusion", "no pneumothorax", "normal cardiomediastinal silhouette"],
+      "impression": "No acute cardiopulmonary process.",
+      "measurements": [],
+      "critical_flag": false
+    }
+  },
+  {
+    "id": "rad-0003",
+    "report": "EXAMINATION: CT head without contrast. INDICATION: 72yo with acute left-sided weakness, onset 90 minutes ago. FINDINGS: There is a hyperdense right middle cerebral artery sign. Loss of gray-white differentiation in the right insular cortex. No intracranial hemorrhage. No midline shift. Ventricles normal in size. IMPRESSION: Early ischemic changes in the right MCA territory with hyperdense MCA sign, concerning for acute ischemic stroke. No hemorrhage. Findings communicated to stroke team.",
+    "extraction": {
+      "modality": "CT",
+      "body_part": "head",
+      "findings": ["hyperdense right MCA sign", "loss of gray-white differentiation in right insular cortex", "no intracranial hemorrhage", "no midline shift"],
+      "impression": "Early right MCA territory ischemic changes concerning for acute ischemic stroke; no hemorrhage.",
+      "measurements": [],
+      "critical_flag": true
+    }
+  },
+  {
+    "id": "rad-0004",
+    "report": "EXAMINATION: MRI right knee without contrast. INDICATION: Twisting injury, mechanical locking. FINDINGS: Complex tear of the posterior horn of the medial meniscus. Full-thickness tear of the anterior cruciate ligament with associated bone contusions of the lateral femoral condyle and posterolateral tibial plateau. Posterior cruciate ligament intact. Small joint effusion. IMPRESSION: ACL rupture with bone contusions and medial meniscal tear.",
+    "extraction": {
+      "modality": "MRI",
+      "body_part": "knee",
+      "findings": ["complex tear of posterior horn of medial meniscus", "full-thickness ACL tear", "bone contusions of lateral femoral condyle and posterolateral tibial plateau", "intact PCL", "small joint effusion"],
+      "impression": "ACL rupture with bone contusions and medial meniscal tear.",
+      "measurements": [],
+      "critical_flag": false
+    }
+  },
+  {
+    "id": "rad-0005",
+    "report": "EXAMINATION: CT abdomen and pelvis with contrast. INDICATION: Right lower quadrant pain. FINDINGS: The appendix is dilated to 11 mm with wall thickening, periappendiceal fat stranding, and a small amount of free fluid in the pelvis. No appendicolith. No abscess. Remainder of bowel unremarkable. IMPRESSION: Acute uncomplicated appendicitis.",
+    "extraction": {
+      "modality": "CT",
+      "body_part": "abdomen and pelvis",
+      "findings": ["dilated appendix to 11 mm with wall thickening", "periappendiceal fat stranding", "small pelvic free fluid", "no appendicolith", "no abscess"],
+      "impression": "Acute uncomplicated appendicitis.",
+      "measurements": ["appendix 11 mm"],
+      "critical_flag": true
+    }
+  },
+  {
+    "id": "rad-0006",
+    "report": "EXAMINATION: Ultrasound right upper quadrant. INDICATION: Postprandial right upper quadrant pain. FINDINGS: Multiple mobile gallstones in the gallbladder, the largest measuring 1.2 cm. Gallbladder wall thickness normal at 2 mm. No pericholecystic fluid. Negative sonographic Murphy sign. Common bile duct measures 4 mm, within normal limits. IMPRESSION: Cholelithiasis without evidence of acute cholecystitis.",
+    "extraction": {
+      "modality": "Ultrasound",
+      "body_part": "right upper quadrant",
+      "findings": ["multiple mobile gallstones, largest 1.2 cm", "normal gallbladder wall 2 mm", "no pericholecystic fluid", "negative sonographic Murphy sign", "common bile duct 4 mm"],
+      "impression": "Cholelithiasis without acute cholecystitis.",
+      "measurements": ["largest gallstone 1.2 cm", "gallbladder wall 2 mm", "common bile duct 4 mm"],
+      "critical_flag": false
+    }
+  },
+  {
+    "id": "rad-0007",
+    "report": "EXAMINATION: CT pulmonary angiogram. INDICATION: Acute dyspnea, tachycardia, elevated D-dimer. FINDINGS: Filling defects are present within the right main pulmonary artery extending into the right lower lobe segmental branches, consistent with acute pulmonary embolism. Right ventricle is enlarged with an RV:LV ratio of 1.3, suggesting right heart strain. Reflux of contrast into the IVC. No pulmonary infarct. IMPRESSION: Acute right pulmonary embolism with signs of right heart strain.",
+    "extraction": {
+      "modality": "CT",
+      "body_part": "chest",
+      "findings": ["filling defects in right main pulmonary artery extending to right lower lobe segmental branches", "acute pulmonary embolism", "enlarged right ventricle with RV:LV ratio 1.3", "contrast reflux into IVC", "no pulmonary infarct"],
+      "impression": "Acute right pulmonary embolism with signs of right heart strain.",
+      "measurements": ["RV:LV ratio 1.3"],
+      "critical_flag": true
+    }
+  },
+  {
+    "id": "rad-0008",
+    "report": "EXAMINATION: Mammogram, bilateral screening. INDICATION: Routine screening, age 52. FINDINGS: The breasts are heterogeneously dense, which may lower the sensitivity of mammography. No suspicious masses, architectural distortion, or microcalcifications. No skin thickening or nipple retraction. Stable compared to prior exam. IMPRESSION: Negative screening mammogram. BI-RADS category 1. Routine annual screening recommended.",
+    "extraction": {
+      "modality": "Mammogram",
+      "body_part": "breast",
+      "findings": ["heterogeneously dense breasts", "no suspicious masses", "no architectural distortion", "no microcalcifications", "stable from prior"],
+      "impression": "Negative screening mammogram, BI-RADS category 1.",
+      "measurements": [],
+      "critical_flag": false
+    }
+  }
+]
