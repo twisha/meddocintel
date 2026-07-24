@@ -18,6 +18,8 @@ Document (PDF/image/text)
 
 > 📐 **Architecture:** see [docs/HLD.md](docs/HLD.md) for the high-level design — system context, pipeline, data model, and sequence diagrams (Mermaid).
 
+> 📘 **Guide:** see [docs/APPLICATION_GUIDE.md](docs/APPLICATION_GUIDE.md) for a narrative walkthrough — what it does, a file-by-file code tour, and where/why AI is used.
+
 > 🧩 **Subproject — self-hosted fine-tuned tier:** [`clinical-lora-adapters/`](clinical-lora-adapters/README.md) adds a parameter-efficient (LoRA) system — one open-weights 7B base with swappable, specialty-specific adapters (cardiology summarization, radiology extraction) — as a self-hosted alternative to the Claude extraction slot. Same memory footprint serves N specialties. See its [README](clinical-lora-adapters/README.md).
 
 ---
